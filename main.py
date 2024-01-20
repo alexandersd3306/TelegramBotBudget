@@ -27,7 +27,4 @@ def main(message):
         bot.send_message(message.chat.id, f'Привет!, {message.from_user.first_name} {message.from_user.last_name}')
     elif message.text.lower() == 'ид' or message.text.lower() == 'id':
         bot.reply_to(message, f'Вот твой ID!: {message.from_user.id}')
-
-
-
 bot.polling(none_stop=True)
